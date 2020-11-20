@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome library -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- local styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Tables Page</title>
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <header class="jumbotron flex">
+        <h1 class="text-center">
+          <i class="fas fa-fire fa-lg mr-3"></i>Hot Restaurant
+        </h1>
+        <hr>
+        <h2 class="text-center">
+            Current Reservations and Waiting List
+        </h2>
+        <div class="d-flex justify-content-center mt-5">
+            <button type="button" class="reserveBtn btn btn-danger  btn-lg m-1"><i class="fas fa-table fa-sm mr-2"></i>Make a Reservation</button>
+            <button type="button" class="homeBtn btn btn-light btn-lg m-1"><i class="fas fa-home fa-sm mr-2"></i></button>
+        </div>
+      </header>
+      <!-- reservation form -->
+    <div class="d-flex flex-column border border-dark rounded reserveTable">
+        <h4 class="form-heading">Current Reservations</h3>
+        <div class="d-flex bd-highlight">
+            <div class="reservationNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">1</div>
+            <h3 class="m-2 p-2 w-100"> | Smith </h3>
+        </div>
+        <div class="d-flex bd-highlight">
+            <div class="reservationNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">2</div>
+            <h3 class="m-2 p-2 w-100"> | Neo </h3>
+        </div>
+        <div class="d-flex bd-highlight">
+            <div class="reservationNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">3</div>
+            <h3 class="m-2 p-2 w-100 "> | Grayson </h3>
+        </div>
+    </div>
+    <div class="d-flex flex-column border border-dark rounded waitTable mt-3">
+        <h4 class="form-heading">Waiting List</h3>
+        <div class="d-flex bd-highlight">
+            <div class="waitNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">1</div>
+            <h3 class="m-2 p-2 w-100"> | Smith </h3>
+        </div>
+        <div class="d-flex bd-highlight">
+            <div class="waitNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">2</div>
+            <h3 class="m-2 p-2 w-100"> | Neo </h3>
+        </div>
+        <div class="d-flex bd-highlight">
+            <div class="waitNum m-2 pl-4 pr-4 pt-2 pb-2 flex-shrink-1 text-justify font-weight-bold">3</div>
+            <h3 class="m-2 p-2 w-100 "> | Grayson </h3>
+        </div>
+    </div>
+    </div>
+
+
+    <nav class="d-flex justify-content-left m-4">
+        <a href="#" class="tableLink mr-2">API Table Link</a> | <a href="#" class="waitLink ml-3">API Wait List</a>
+    </nav>
+  </body>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- PUT SCRIPT IN HERE -->
+  <script></script>
+</html>
