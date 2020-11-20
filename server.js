@@ -17,5 +17,5 @@ app.get("/", function(req, res) {
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() { 
-  console.log("APP IS RUNNING ON PORT")
+  console.log("APP IS RUNNING ON PORT" + PORT)
 })
