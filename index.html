@@ -22,24 +22,29 @@
     <title>Hot Restaurant</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-5">
       <header class="jumbotron flex">
         <h1 class="text-center">
           <i class="fas fa-fire fa-lg mr-3"></i>Hot Restaurant
         </h1>
-        <hr>
+        <hr />
         <h2 class="text-center">
-            We only have 5 tables! Book your seat before they're all gone!
+          We only have 5 tables! Book your seat before they're all gone!
         </h2>
         <div class="d-flex justify-content-center mt-5">
-            <button type="button" class="tablesBtn btn btn-primary  btn-lg m-1"><i class="fas fa-table fa-sm mr-2"></i>View Tables</button>
-            <button type="button" class="reserveBtn btn btn-danger  btn-lg m-1"><i class="fas fa-utensils fa-sm mr-2"></i>Make Reservation</button>
+          <button type="button" class="tablesBtn btn btn-primary btn-lg m-1">
+            <i class="fas fa-table fa-sm mr-2"></i>View Tables
+          </button>
+          <button type="button" class="reserveBtn btn btn-danger btn-lg m-1">
+            <i class="fas fa-utensils fa-sm mr-2"></i>Make Reservation
+          </button>
         </div>
       </header>
+      <nav class="d-flex justify-content-left m-4">
+        <a href="#" class="tableLink mr-2">API Table Link</a> |
+        <a href="#" class="waitLink ml-3">API Wait List</a>
+      </nav>
     </div>
-    <nav class="d-flex justify-content-left m-4">
-        <a href="#" class="tableLink mr-2">API Table Link</a> | <a href="#" class="waitLink ml-3">API Wait List</a>
-    </nav>
   </body>
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
