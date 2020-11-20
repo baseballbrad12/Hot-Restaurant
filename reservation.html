@@ -72,11 +72,19 @@
   <script>
     //  complete a function that takes the values from the form and assigns them to vars 
     $(".submit").on("click", () => {
-        let $name = $("#nameInput").val();
-        let $phone = $("#phoneInput").val();
-        let $email = $("#emaiInput").val();
-    })
+        let newReservation = {
+            name: $("#nameInput").val().trim();
+            phone: $("#phoneInput").val().trim();
+            email: $("#emaiInput").val().trim();
+        };
 
+        // post the newReservation object to the API
+        $.post('/info/tables.js', newReservation)
+            .then((data) => {
+                console.log("tables.js",data);
+                alert("Adding new reservation data...")
+            });
+    });
 
   </script>
 </html>
